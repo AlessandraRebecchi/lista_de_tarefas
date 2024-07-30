@@ -3,13 +3,13 @@ $(document).ready(function() {
         e.preventDefault();
 
         
-        const tarefa = $('#tarefa').val();
+        const task = $('#tarefa').val();
 
         
         $('#lista').append('<li><span>' + task + '</span></li>');
 
 
-        $('#task').val('');
+        $('#tarefa').val('');
     });
 
 
@@ -20,4 +20,7 @@ $(document).ready(function() {
     });
 
 
-   });
+    $('#clear-tasks').on('click', function() {
+        $('#lista').empty();
+    });
+});
