@@ -9,7 +9,7 @@ $(document).ready(function() {
         $('#lista').append('<li><span>' + task + '</span></li>');
 
 
-        $('#tarefa').val('');
+        $('#task').val('');
     });
 
 
